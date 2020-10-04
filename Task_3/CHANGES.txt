@@ -1,0 +1,7 @@
+Изменение классов по сравнению с Task_2:
+1) Добавлен абстрактный класс Person
+2) Добавлены классы-миксины FoodMixin и WeightMixin
+3) Класс Fighter теперь наследуется от классов Person, FoodMixin и WeightMixin
+4) Добавлено поле weight в класс Fighter; также добавлены геттер и сеттер для этого поля
+4) В классе Fighter определен метод get_information(), переопределены методы who_am_i(), weight_on_the_scales(), eat_fish()
+5) Добавлен класс CombatWrestler, унаследованный от KickBoxer и Wrestler, и переопределяющий два метода
