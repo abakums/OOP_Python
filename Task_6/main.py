@@ -2,15 +2,15 @@ from Task_6.Fighter_types import *
 import asyncio
 
 
-@asyncio.coroutine
+@asyncio.coroutine  # обозначаем сопрограмму на основе генератора
 def battle(unit1, unit2, ring_numb):
     """функция для проведения боя между двумя бойцами"""
     while unit1.health > 0 and unit2.health > 0:
         print("ring number: {0}\n".format(ring_numb), unit1.universal_hit(unit2), "\n")
-        yield from asyncio.sleep(0.2)
+        yield from asyncio.sleep(0.1)
         if unit2.health > 0:
             print("ring number: {0}\n".format(ring_numb), unit2.universal_hit(unit1), "\n")
-            yield from asyncio.sleep(0.2)
+            yield from asyncio.sleep(0.1)
     if ring_numb == "А":
         loop.stop()
 

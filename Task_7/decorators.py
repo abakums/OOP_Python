@@ -7,7 +7,7 @@ def hit(type_hit):
             if args[0].health <= 0 and args[1].health <= 0:
                 result += "\nБоевая ничья!\n\n"
             elif args[1].health <= 0:
-                result += "\nВ этом бою проиграл {0}| у бойца {1} остаток здоровья: {2}"\
+                result += "\n\n\nВ этом бою проиграл {0}| у бойца {1} остаток здоровья: {2}"\
                     .format(args[1], args[0], args[0].health)
             return result
         return wrapper
